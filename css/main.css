@@ -291,7 +291,7 @@ address {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 1200) and (min-width: 1600px) {
+@media screen and (min-width: 1200) and (max-width: 1600px) {
   .container {
     width: 1200px;
     margin-right: auto;
@@ -397,6 +397,7 @@ address {
 }
 
 .occupation {
+  align-items: center;
   padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
@@ -408,10 +409,13 @@ address {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+}
+@media screen and (min-width: 1200) {
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .occupation__header {
