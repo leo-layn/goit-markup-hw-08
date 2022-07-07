@@ -13,37 +13,46 @@
 </head>
 
 <body>
-    <header class="header__portfolio">
+    <header class="header__studio">
         <div class="header__container">
-            <a href="./index.html" lang="en" class="logo header__logo"><span class="header__logo--web">Web</span>Studio</a>
             <nav class="navigate">
-                <ul class="navigate__list">
-                    <li class="navigate__item">
-                        <a href="./index.html" class="navigate__link">Студия</a>
-                    </li>
-                    <li class="navigate__item">
-                        <a href="./portfolio.html" class="navigate__link navigate__link--active">Портфолио</a>
-                    </li>
-                    <li class="navigate__item">
-                        <a href="#" class="navigate__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                <a href="./index.html" lang="en" class="logo header__logo"><span
+                        class="header__logo--web">Web</span>Studio</a>
+                <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
+                    <svg width="40px" height="40px" aria-label="Мобильное меню">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#menu-nav"></use>
+                        <use class="icon-close" href="./images/symbol-defs.svg#close-nav"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="navigate__list">
+                        <li class="navigate__item">
+                            <a href="./index.html" class="navigate__link">Студия</a>
+                        </li>
+                        <li class="navigate__item">
+                            <a href="./portfolio.html" class="navigate__link navigate__link--active">Портфолио</a>
+                        </li>
+                        <li class="navigate__item">
+                            <a href="#" class="navigate__link">Контакты</a>
+                        </li>
+                    </ul>
     
-            <div class="contacts">
-                <a href="mailto:info@devstudio.com" class="contacts__item contacts__item--mail">
-                    <svg class="contacts__item--icon" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#e-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-                <a href="tel:+380961111111" class="contacts__item contacts__item--tel">
-                    <svg class="contacts__item--icon" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#telephone"></use>
-                    </svg>
-                    +38-096-111-11-11
-                </a>
-            </div>
+                    <div class="contacts">
+                        <a href="mailto:info@devstudio.com" class="contacts__item contacts__item--mail">
+                            <svg class="contacts__item--icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#e-mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a href="tel:+380961111111" class="contacts__item contacts__item--tel">
+                            <svg class="contacts__item--icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#telephone"></use>
+                            </svg>
+                            +38-096-111-11-11
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     

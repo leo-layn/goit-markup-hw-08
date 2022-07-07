@@ -3,14 +3,14 @@
     @media screen and (max-width: 1199px) {
         display: none;
     }
-    align-items: center;
+    
     padding-top: 0;
 }
 
  .container {
      padding-left: 15px;
      padding-right: 15px;
-
+    
      @media screen and (min-width: 1200) {
          width: 1200px;
          margin-right: auto;

@@ -85,7 +85,6 @@
 }
 
 .navigate__item {
-    // position: relative;
 
     &+& {
         margin-left: 50px;
@@ -192,7 +191,8 @@
 
 .contacts__item--icon {
     fill: currentColor;
-
+    margin-right: 10px;
+    
     &:hover,
     &:focus {
         fill: $active-link-hover-color;
