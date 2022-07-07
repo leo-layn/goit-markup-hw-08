@@ -639,12 +639,19 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 1199px) {
+  footer {
+    position: relative;
+    height: 603px;
+    text-align: center;
+  }
+}
 
 .footer__container {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
     align-items: baseline;
@@ -654,8 +661,10 @@ footer {
   }
 }
 
-.footer__contacts {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-right: 70px;
+  }
 }
 
 .footer__contacts--logo {
@@ -696,10 +705,21 @@ footer {
 }
 
 .address__item + .address__item {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 /*Соц сети footer*/
+@media screen and (max-width: 1199px) {
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
 .socials__header {
   font-weight: 700;
   line-height: 16px;
@@ -707,9 +727,17 @@ footer {
   color: #ffffff;
 }
 
-.socials__list {
-  display: flex;
-  margin-top: 20px;
+@media screen and (max-width: 767px) {
+  .socials__list {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .socials__list {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .socials__item + .socials__item {
@@ -752,6 +780,16 @@ footer {
 
 .subscribe__form {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+  }
 }
 
 .subscribe__input {
@@ -771,11 +809,18 @@ footer {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .subscribe__btn {
   position: relative;
   display: inline-block;
-  margin-left: 12px;
   padding: 10px 62px 10px 28px;
   width: 200px;
   height: 50px;
@@ -794,6 +839,11 @@ footer {
 }
 .subscribe__btn:hover, .subscribe__btn:focus {
   background-color: #1b65a2;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon {
