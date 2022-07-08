@@ -1,22 +1,10 @@
 .occupation {
+    padding-top: 0;
 
     @media screen and (max-width: 1199px) {
         display: none;
     }
-    
-    padding-top: 0;
 }
-
- .container {
-     padding-left: 15px;
-     padding-right: 15px;
-    
-     @media screen and (min-width: 1200) {
-         width: 1200px;
-         margin-right: auto;
-         margin-left: auto;
-     }
- }
 
 .occupation__header {
     margin-bottom: 50px;

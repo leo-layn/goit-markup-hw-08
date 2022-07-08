@@ -18,7 +18,7 @@
 
 <body>
     <header class="header__studio">
-        <div class="header__container">
+        <div class="container">
             <nav class="navigate">
                 <a href="./index.html" lang="en" class="logo header__logo"><span class="header__logo--web">Web</span>Studio</a>
                 <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
@@ -139,8 +139,18 @@
                 <h2 class="team__header">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="./images/i_demyanenko.jpg" alt="Ighor Demyanenko" class="team__img" width="270"
-                            height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/igor-desktop.jpg 1x, ./images/igor-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset=" ./images/igor-tablet.jpg 1x, ./images/igor-tablet@2x.jpg 2x" 
+                                media="(min-width: 738px)" />
+                            <source 
+                                srcset="./images/igor-mob.jpg   1x, ./images/igor-mob@2x.jpg 2x" 
+                                media="(min-width: 480px)" />
+                            <img src="./images/igor-mob.jpg" alt="Игорь Демьяненко" width="450" />
+                            </picture>
                         <div class="team__meta">
                             <h3 class="team__meta--name">Игорь Демьяненко</h3>
                             <p class="team__meta--profession">Product Designer</p>
@@ -177,7 +187,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/o_repina.jpg" alt="Olga Repina" class="team__img" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/olga-desktop.jpg 1x, ./images/olga-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset=" ./images/olga-tablet.jpg 1x, ./images/olga-tablet@2x.jpg 2x" 
+                                media="(min-width: 738px)" />
+                            <source 
+                                srcset="./images/olga-mob.jpg   1x, ./images/olga-mob@2x.jpg 2x" 
+                                media="(min-width: 480px)" />
+                            <img src="./images/ihor-mob.jpg" alt="Ольга Репина" width="450" />
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__meta--name">Ольга Репина</h3>
                             <p class="team__meta--profession">Frontend Developer</p>
@@ -214,8 +235,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/n_tarasov.jpg" alt="Nikolay Tarasov" class="team__img" width="270"
-                            height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/nikolay-desktop.jpg 1x, ./images/nikolay-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset=" ./images/nikolay-tablet.jpg 1x, ./images/nikolay-tablet@2x.jpg 2x" 
+                                media="(min-width: 738px)" />
+                            <source 
+                                srcset="./images/nikolay-mob.jpg   1x, ./images/nikolay-mob@2x.jpg 2x" 
+                                media="(min-width: 480px)" />
+                            <img src="./images/ihor-mob.jpg" alt="Николай Тарасов" width="450" />
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__meta--name">Николай Тарасов</h3>
                             <p class="team__meta--profession">Marketing</p>
@@ -252,8 +283,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/m_ermakov.jpg" alt="Mikhail Ermakov" class="team__img" width="270"
-                            height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/mihail-desktop.jpg 1x, ./images/mihail-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset=" ./images/mihail-tablet.jpg 1x, ./images/mihail-tablet@2x.jpg 2x" 
+                                media="(min-width: 738px)" />
+                            <source 
+                                srcset="./images/mihail-mob.jpg   1x, ./images/mihail-mob@2x.jpg 2x" 
+                                media="(min-width: 480px)" />
+                            <img src="./images/ihor-mob.jpg" alt="Михаил Ермаков" width="450" />
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__meta--name">Михаил Ермаков</h3>
                             <p class="team__meta--profession">UI Designer</p>
@@ -403,6 +444,7 @@
 
     <footer class="footer">
         <div class="footer__container">
+            <div class="footer__network">
             <div class="footer__contacts">
                 <a href="./index.html" lang="en" class="logo footer__contacts--logo"><span class="footer__logo--web">Web</span>Studio</a>
                 <address class="adderess">
@@ -454,6 +496,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>
             </div>
             
             <div class="subscribe">

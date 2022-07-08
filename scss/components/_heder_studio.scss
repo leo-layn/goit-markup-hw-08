@@ -2,16 +2,6 @@
     position: relative;
 }
 
-.header__container{
-    padding-right: 15px;
-    padding-left: 15px;
-
-    @media screen and (min-width: 1200px){
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
 
 .navigate{
     display: flex;
@@ -58,7 +48,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        height: 480px;
+        height: auto;
 
     }
 
@@ -81,13 +71,17 @@
         margin-right: auto;
         margin-left: auto;
     }
-    
+
 }
 
 .navigate__item {
 
     &+& {
         margin-left: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: 50px;  
     }
 }
 
@@ -99,6 +93,21 @@
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
+        color: $main-text-color;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms $timing-function;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1.18;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
         color: $main-text-color;
         font-weight: 500;
         line-height: 1.14;
@@ -133,8 +142,10 @@
 
 /*E-mail и телефон*/
 .contacts {
-    display: flex;
-
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    
     @media screen and (min-width: 768px) and (max-width: 1199px){
        flex-direction: column;
        align-items: center;
@@ -196,5 +207,9 @@
     &:hover,
     &:focus {
         fill: $active-link-hover-color;
+    }
+                
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }

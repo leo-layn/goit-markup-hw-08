@@ -2,39 +2,50 @@
 .order {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-            url(../images/bg-img-order.jpg);
+    max-width: 1600px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border: 1px solid $border-order-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-
-    @media screen and (max-width: 1200) and (min-width: 1600px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        height: 600px;
-        max-width: 1600px;
-        
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/order-bg-mob.jpg);
+    
+    @media screen and (min-resolution: 2dppx) {
+        .order{
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-bg-mob@2x.jpg);
+        }
     }
-}
 
-.container{
-        padding-left: 15px;
-        padding-right: 15px;
+    @media screen and (min-width: 481px){
+        .order {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-bg-tablet.jpg);
+        }
 
-    @media screen and (min-width: 1200) and (max-width: 1600px) {
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }  
+        @media screen and (min-resolution: 2dppx) {
+            .order {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-bg-tablet@2x.jpg);
+            }
+        }
+    }
+        
+    @media screen and (min-width: 769px) {
+        .order {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-bg-desktop.jpg);
+        }
+
+        @media screen and (min-resolution: 2dppx) {
+            .order {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-bg-desktop@2x.jpg);
+            }
+        }
+    }
 }    
 
 .order__head {
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
     color: $main-bg-color;
@@ -42,7 +53,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 400px) and (max-width: 1199px) {
         width: 360px;
         font-size: 26px;
         line-height: 1.62;

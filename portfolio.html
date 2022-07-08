@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="header__studio">
-        <div class="header__container">
+    <header class="header__portfolio">
+        <div class="container">
             <nav class="navigate">
                 <a href="./index.html" lang="en" class="logo header__logo"><span
                         class="header__logo--web">Web</span>Studio</a>
@@ -72,7 +72,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/technokryak.jpg" alt="Web-site" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/tech-kryak-desktop.jpg 1x, ./images/tech-kryak-desktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/tech-kryak-tablet.jpg 1x, ./images/tech-kryak-tablet@2x.jpg 2x"   
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/tech-kryak-mob.jpg 1x, ./images/tech-kryak-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/tech-kryak-mob@2x.jpg" alt="Web-site" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -86,7 +97,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/poster_new_orlean.jpg" alt="Basketball" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/basket-desctop.jpg 1x, ./images/basket-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x"
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/basket-mob.jpg 1x, ./images/basket-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/basket-mob@2x.jpg" alt="Баскетбол" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -101,7 +123,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/restaurant_seafood.jpg" alt="Logo restaurant" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/restoran-desktop.jpg 1x, ./images/restoran-desktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/restoran-tablet.jpg 1x, ./images/restoran-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/restoran-mob.jpg 1x, ./images/restoran-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/restoran-mob@2x.jpg" alt="Ресторан" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo
                                     tempore?
@@ -117,7 +150,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/project_prime.jpg" alt="Headphones" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/restoran-desktop.jpg 1x, ./images/restoran-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/restoran-tablet.jpg 1x, ./images/restoran-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/restoran-mob.jpg 1x, ./images/restoran-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/restoran-mob@2x.jpg" alt="Ресторан" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -132,7 +176,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/project_boxes.jpg" alt="Two boxes" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/project-desctop.jpg 1x, ./images/project-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/project-tablet.jpg 1x, ./images/project-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/project-mob.jpg 1x, ./images/project-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/project-mob@2x.jpg" alt="Проект" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -147,7 +202,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/inspiration_borders.jpg" alt="Inspiration has no Borders" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/project-box-desctop.jpg 1x, ./images/project-box-desctop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/project-box-tablet.jpg 1x, ./images/project-box-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/project-box-mob.jpg 1x, ./images/project-box-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/project-box-mob@2x.jpg" alt="Проект Коробки" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -162,7 +228,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/issue_limited.jpg" alt="Magazine" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/inspiration-desktop.jpg 1x, ./images/inspiration-desktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/inspiration-tablet.jpg 1x, ./images/inspiration-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/inspiration-mob.jpg 1x, ./images/inspiration-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/inspiration-mob@2x.jpg" alt="Вдохновенью нет границ" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -177,7 +254,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/project_lab.jpg" alt="Project LAB" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/issue-desktop.jpg 1x, ./images/issue-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/issue-tablet.jpg 1x, ./images/issue-tablet@2x.jpg.jpg 2x"
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/issue-mob.jpg 1x, ./images/issue-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/issue-mob@2x.jpg" alt="Издание" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>
@@ -192,7 +280,18 @@
                     <li class="example__item">
                         <a href="#" class="example__link">
                             <div class="example__thumb">
-                                <img src="./images/growing_business.jpg" alt="App" class="example__img" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="./images/project-lab-desktop.jpg 1x, ./images/project-lab-desktop@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" />
+                                    <source 
+                                        srcset="./images/project-lab-tablet.jpg 1x, ./images/project-lab-tablet@2x.jpg 2x" 
+                                        media="(min-width: 738px)" />
+                                    <source 
+                                        srcset="./images/project-lab-mob.jpg 1x, ./images/project-lab-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)" />
+                                    <img src="./images/project-lab-mob@2x.jpg" alt="Проект Лаб" class="example__img" width="450" />
+                                </picture>
                                 <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
                                     soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
                                     Eius, voluptatum quibusdam.</p>

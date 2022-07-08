@@ -20,58 +20,6 @@
  $bg-color-modal: #00000033;
  $border-color-input-form: rgba(33, 33, 33, 0.2);
 
- html {
-     box-sizing: border-box;
- }
-
- *,
- *::before,
- *::after {
-     box-sizing: inherit;
- }
-
- body {
-     background-color: #fff;
-     color: var(--main-text-color);
-
-     font-family: 'Roboto', sans-serif;
-     font-size: 14px;
-     letter-spacing: 0.03em;
- }
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p {
-     margin: 0;
- }
-
- h2 {
-     font-weight: 700;
-     font-size: 36px;
-     line-height: 1.17;
- }
-
-
- section {
-     padding-top: 94px;
-     padding-bottom: 94px;
- }
-
- img {
-     display: block;
-     max-width: 100%;
-     height: auto;
- }
-
- address {
-     font-style: normal;
- }
-
-
  %list {
      padding: 0;
      margin: 0;
@@ -81,27 +29,4 @@
  %link {
     text-decoration: none;
     cursor: pointer;
- }
-
- %container {
-    padding-left: 15px;
-    padding-right: 15px;
-            width: 1200px;
-                margin-right: auto;
-                margin-left: auto;
-
- }
-
- /*Настройки скрытого класса*/
- .visually-hidden {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0px;
-     padding: 0px;
-     white-space: nowrap;
-     clip-path: insert(100%);
-     clip: rect(0 0 0 0);
-     overflow: hidden;
  }

@@ -1,13 +1,3 @@
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
 
 section{
     @media screen and (max-width: 1199px) {
@@ -19,12 +9,14 @@ section{
     @extend %list;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 767px){
         flex-wrap: wrap;
         justify-content: start;
+        margin-bottom: 40px;
     }
+    
 }
 
 .page-navigate__item + .page-navigate__item {
