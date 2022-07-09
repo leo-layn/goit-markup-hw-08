@@ -15,11 +15,15 @@ section{
         flex-wrap: wrap;
         justify-content: start;
         margin-bottom: 40px;
+        gap: 15px 8px;
     }
     
 }
 
 .page-navigate__item + .page-navigate__item {
+    @media screen and (max-width: 767px){
+        margin: 0;
+    }
     margin-left: 8px;
 }
 

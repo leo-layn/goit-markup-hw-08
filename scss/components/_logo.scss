@@ -9,6 +9,13 @@
     line-height: 1.19;
 }
 
+.header__logo {
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
+    
+}
+
 .header__logo--web {
     color: $active-link-hover-color;
 }

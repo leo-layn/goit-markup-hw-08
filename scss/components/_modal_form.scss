@@ -68,6 +68,10 @@
         color: rgba(117, 117, 117, 0.5);
     }
 
+    @media screen and (max-width: 450px) {
+        width: 320px;
+    }
+
     @media screen and (min-width: 1600px) {
         width: 448px;
     }

@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items: center;
     min-width: 80px;
+        @media screen and (min-width: 1200px) {
+                justify-content: flex-start;
+            }
 }
 
 .menu-btn {
@@ -42,24 +45,23 @@
 
     &.is-open {
         display: block;
-    }
-
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 48px;
         left: 0;
         width: 100%;
-        height: 480px;
-
-    }
+        height: 100%;
+        z-index: 1;
+}
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         width: 100%;
-
     }
+
+    // @media screen and (min-width: 1200px) {
+    //     justify-content: flex-start;
+    // }
 }
 
 .navigate__list {
@@ -73,6 +75,11 @@
         margin-right: auto;
         margin-left: auto;
     }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-start;
+            margin: 0;
+        }
 
 }
 
