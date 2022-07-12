@@ -1,386 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
-    <header class="header__portfolio">
+    
+    <header class="header">
+
         <div class="container">
-            <nav class="navigate">
-                <a href="./index.html" lang="en" class="logo header__logo"><span
-                        class="header__logo--web">Web</span>Studio</a>
-                <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
-                    <svg width="40px" height="40px" aria-label="Мобильное меню">
-                        <use class="icon-menu" href="./images/symbol-defs.svg#menu-nav"></use>
-                        <use class="icon-close" href="./images/symbol-defs.svg#close-nav"></use>
-                    </svg>
-                </button>
-                <div class="menu-container" id="menu-container" data-menu>
-                    <ul class="navigate__list">
-                        <li class="navigate__item">
-                            <a href="./index.html" class="navigate__link">Студия</a>
-                        </li>
-                        <li class="navigate__item">
-                            <a href="./portfolio.html" class="navigate__link navigate__link--active">Портфолио</a>
-                        </li>
-                        <li class="navigate__item">
-                            <a href="#" class="navigate__link">Контакты</a>
-                        </li>
-                    </ul>
-    
-                    <div class="contacts">
-                        <a href="mailto:info@devstudio.com" class="contacts__item contacts__item--mail">
-                            <svg class="contacts__item--icon" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#e-mail"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                        <a href="tel:+380961111111" class="contacts__item contacts__item--tel">
-                            <svg class="contacts__item--icon" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#telephone"></use>
-                            </svg>
-                            +38-096-111-11-11
-                        </a>
-                    </div>
-                </div>
+            <nav class="nav">
+                <a class="logo header__logo" href="./index.html"><span
+                        class="header__logo-accent logo-accent">Web</span>Studio</a>
+                <ul class="nav__list list">
+                    <li class="nav__item"> 
+                        <a href="./index.html" class="nav__link">Студия</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a href="./portfolio.html" class="nav__link--current nav__link">Портфолио</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a href="" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
             </nav>
+            <ul class="contacts list">
+                <li class="contacts__item"> 
+                    <a href="mailto:info@devstudio.com" class="contacts__link link">
+                        <svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item"> 
+                    <a href="tel:+380961111111" class="contacts__link link">
+                        <svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="menu-open-btn">
+                <svg width="40" height="40" class="menu-open-svg">
+                    <use href="./images/symbol-defs.svg#icon-mob-menu-open" />
+                </svg>
+            </button>
         </div>
-    </header>
-    
-    <main>
-        <section>
+
+        <div class="mob-menu is-hidden">
             <div class="container">
-                <h1 class="visually-hidden">Навигация по странице</h1>
-                <ul class="page-navigate__list">
-                    <li class="page-navigate__item"><button type="button" class="page-navigate__btn">Все</button></li>
-                    <li class="page-navigate__item"><button type="button" class="page-navigate__btn">Веб-сайты</button></li>
-                    <li class="page-navigate__item"><button type="button" class="page-navigate__btn">Приложения</button></li>
-                    <li class="page-navigate__item"><button type="button" class="page-navigate__btn">Дизайн</button></li>
-                    <li class="page-navigate__item"><button type="button" class="page-navigate__btn">Маркетинг</button></li>
-                </ul>
-
-                <ul class="example__list">
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/tech-kryak-desktop.jpg 1x, ./images/tech-kryak-desktop@2x.jpg 2x" 
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/tech-kryak-tablet.jpg 1x, ./images/tech-kryak-tablet@2x.jpg 2x"   
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/tech-kryak-mob.jpg 1x, ./images/tech-kryak-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/tech-kryak-mob@2x.jpg" alt="Web-site" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                    позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-
-                            <div class="example__meta">
-                                <h3 class="example__header">Технокряк</h3>
-                                <p class="example__title">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/basket-desctop.jpg 1x, ./images/basket-desctop@2x.jpg 2x"
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/basket-tablet.jpg 1x, ./images/basket-tablet@2x.jpg 2x"
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/basket-mob.jpg 1x, ./images/basket-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/basket-mob@2x.jpg" alt="Баскетбол" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-
-                            <div class="example__meta">
-                                <h3 class="example__header">Постер New Orlean vs Golden Star</h3>
-                                <p class="example__title">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/restoran-desktop.jpg 1x, ./images/restoran-desktop@2x.jpg 2x" 
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/restoran-tablet.jpg 1x, ./images/restoran-tablet@2x.jpg 2x" 
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/restoran-mob.jpg 1x, ./images/restoran-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/restoran-mob@2x.jpg" alt="Ресторан" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo
-                                    tempore?
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">
-                                <h3 class="example__header">Ресторан Seafood</h3>
-                                <p class="example__title">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/project-desctop.jpg 1x, ./images/project-desctop@2x.jpg 2x"  
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/project-tablet.jpg 1x, ./images/project-tablet@2x.jpg 2x"
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/project-mob.jpg 1x, ./images/project-mob@2x.jpg 2x"  
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/project-mob@2x.jpg" alt="Проект" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-
-                            <div class="example__meta">
-                                <h3 class="example__header">Проект Prime</h3>
-                                <p class="example__title">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/project-box-desctop.jpg 1x, ./images/project-box-desctop@2x.jpg 2x"
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/project-box-tablet.jpg 1x, ./images/project-box-tablet@2x.jpg 2x"
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/project-box-mob.jpg 1x, ./images/project-box-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/project-box-mob@2x.jpg" alt="Проект Коробки" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">  
-                                <h3 class="example__header">Проект Boxes</h3>
-                                <p class="example__title">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/inspiration-desktop.jpg 1x, ./images/inspiration-desktop@2x.jpg 2x"
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/inspiration-tablet.jpg 1x, ./images/inspiration-tablet@2x.jpg 2x"
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/inspiration-mob.jpg 1x, ./images/inspiration-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/inspiration-mob@2x.jpg" alt="Вдохновенью нет границ" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">
-                                <h3 class="example__header">Inspiration has no Borders</h3>
-                                <p class="example__title">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/issue-desktop.jpg 1x, ./images/issue-desktop@2x.jpg 2x" 
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/issue-tablet.jpg 1x, ./images/issue-tablet@2x.jpg 2x" 
-                                        media="(min-width: 768px)" />
-                                    <source 
-                                        srcset="./images/issue-mob.jpg 1x, ./images/issue-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/issue-mob@2x.jpg" alt="Издание" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">
-                                <h3 class="example__header">Издание Limited Edition</h3>
-                                <p class="example__title">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/project-lab-desktop.jpg 1x, ./images/project-lab-desktop@2x.jpg 2x"
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/project-lab-tablet.jpg 1x, ./images/project-lab-tablet@2x.jpg 2x"
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/project-lab-mob.jpg 1x, ./images/project-lab-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/project-lab-mob@2x.jpg" alt="Проект Лаб" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">
-                                <h3 class="example__header">Проект LAB</h3>
-                                <p class="example__title">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example__item">
-                        <a href="#" class="example__link">
-                            <div class="example__thumb">
-                                <picture>
-                                    <source 
-                                        srcset="./images/buisines-desktop.jpg 1x, ./images/buisines-desktop@2x.jpg 2x" 
-                                        media="(min-width: 1200px)" />
-                                    <source 
-                                        srcset="./images/buisines-tablet.jpg 1x, ./images/buisines-tablet@2x.jpg 2x" 
-                                        media="(min-width: 738px)" />
-                                    <source 
-                                        srcset="./images/buisines-mob.jpg 1x, ./images/buisines-mob@2x.jpg 2x" 
-                                        media="(min-width: 320px)" />
-                                    <img src="./images/buisines-mob@2x.jpg" alt="Растущий бизнесс" class="example__img" width="450" />
-                                </picture>
-                                <p class="example__descr--hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, amet facilis distinctio quas 
-                                    soluta, commodi praesentium quam, ratione quidem repudiandae eaque deleniti quibusdam dolorem voluptatibus nemo tempore? 
-                                    Eius, voluptatum quibusdam.</p>
-                            </div>
-                            
-                            <div class="example__meta">
-                                <h3 class="example__header">Growing Business</h3>
-                                <p class="example__title">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <script src="./js/mobile-menu.js"></script>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__contacts">
-                <a href="./index.html" lang="en" class="logo footer__contacts--logo"><span
-                        class="footer__logo--web">Web</span>Studio</a>
-                <address class="adderess">
-                    <ul class="address__list">
-                        <li class="address__item">
-                            <a href="https://goo.gl/maps/tUuJPF3MNpaoBUgaA" target="_blank"
-                                rel="nofollow noopener noreferrer" class="address__link--locate">г. Киев, пр-т
-                                Леси Украинки,
-                                26</a>
+                <div class="mob-menu__top">
+                    <button type="button" class="menu-close-btn">
+                        <svg width="40" height="40" class="menu-close-svg">
+                            <use href="./images/symbol-defs.svg#icon-mob-menu-close" />
+                        </svg>
+                    </button>
+                    <ul class="mob-menu__nav list">
+                        <li class="mob-menu__nav-item">
+                            <a href="./index.html" class="mob-menu__nav-link link">Студия</a>
                         </li>
-                        <li class="address__item">
-                            <a href="mailto:info@example.com" class="address__link--mail">info@example.com</a>
+                        <li class="mob-menu__nav-item">
+                            <a href="./portfolio.html" class="mob-menu__nav-link link__active link">Портфолио</a>
                         </li>
-                        <li class="address__item">
-                            <a href="tel:+380991111111" class="address__link--tel">+38-099-111-11-11</a>
+                        <li class="mob-menu__nav-item">
+                            <a href="." class="mob-menu__nav-link link">Контакты</a>
                         </li>
                     </ul>
-                </address>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu__contacts list">
+                        <li class="mob-menu__contacts-item">
+                            <a href="tel:+380961111111" class="mob-menu__phone-link link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu__contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mob-menu__mail-link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob_menu__socials list">
+                        <li class="mob-menu__socials-item">
+                            <a href="." class="mob-menu__socials-link link">Instagram</a>
+                        </li>
+                        <li class="mob-menu__socials-item">
+                            <a href="." class="mob-menu__socials-link link">Twitter</a>
+                        </li>
+                        <li class="mob-menu__socials-item">
+                            <a href="." class="mob-menu__socials-link link">Facebook</a>
+                        </li>
+                        <li class="mob-menu__socials-item">
+                            <a href="." class="mob-menu__socials-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-    
-            <div class="socials">
-                <p class="socials__header">Присоединяйтесь</p>
-                <ul class="socials__list ">
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <svg class="socials__icon socials__icon--instagram">
-                                <use href="./images/symbol-defs.svg#instagram"></use>
-                            </svg>
+        </div>
+
+    </header>
+
+    <main>
+        
+        <section class="portfolio">
+            <div class="container">
+                <h1 class="portfolio__title visually-hidden">Наше Портфолио</h1>
+                <ul class="filter list">
+                    <li class="filter__item"> 
+                        <button type="button" class="filter__btn">Все</button>
+                    </li>
+                    <li class="filter__item"> 
+                        <button type="button" class="filter__btn">Веб-сайты</button>
+                    </li>
+                    <li class="filter__item"> 
+                        <button type="button" class="filter__btn">Приложения</button>
+                    </li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__btn">Дизайн</button>
+                    </li>
+                    <li class="filter__item"> 
+                        <button type="button" class="filter__btn">Маркетинг</button>
+                    </li>
+                </ul>
+
+                <ul class="portfolio__list list"> 
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="
+                                                ./images/техно-кряк.jpg 1x,
+                                                ./images/техно-кряк-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/техно-кряк-таб.jpg    1x,
+                                                ./images/техно-кряк-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/техно-кряк-моб.jpg   1x,
+                                                ./images/техно-кряк-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/техно-кряк-моб-2х.jpg" alt="Веб-сайт техно-кряк" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>  
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Технокряк</h2>
+                                <p class="portfolio__list-subtitle">Веб-сайт</p> 
+                            </div>  
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <svg class="socials__icon socials__icon--twitter">
-                                <use href="./images/symbol-defs.svg#twitter"></use>
-                            </svg>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb"> 
+                                <picture>
+                                    <source srcset="
+                                                ./images/постер-баскетбол.jpg 1x,
+                                                ./images/постер-баскетбол-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/постер-баскетбол-таб.jpg    1x,
+                                                ./images/постер-баскетбол-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/постер-баскетбол-моб.jpg   1x,
+                                                ./images/постер-баскетбол-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/постер-баскетбол-моб.jpg" alt="Дизайн постера" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div> 
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio__list-subtitle">Дизайн</p>
+                            </div> 
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <svg class="socials__icon socials__icon--facebook">
-                                <use href="./images/symbol-defs.svg#facebook"></use>
-                            </svg>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb"> 
+                                <picture>
+                                    <source srcset="
+                                                ./images/ресторан.jpg 1x,
+                                                ./images/ресторан-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/ресторан-таб.jpg    1x,
+                                                ./images/ресторан-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/ресторан-моб.jpg   1x,
+                                                ./images/ресторан-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/ресторан-моб.jpg" alt="Лого приложения для ресторана" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>  
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Ресторан Seafood</h2>
+                                <p class="portfolio__list-subtitle">Приложение</p> 
+                            </div> 
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <svg class="socials__icon socials__icon--linkedin">
-                                <use href="./images/symbol-defs.svg#linkedin"></use>
-                            </svg>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="
+                                                ./images/проект.jpg 1x,
+                                                ./images/проект-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/проект-таб.jpg    1x,
+                                                ./images/проект-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/проект-моб.jpg   1x,
+                                                ./images/проект-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/проект-моб.jpg" alt="Наушники" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div> 
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Проект Prime</h2>
+                                <p class="portfolio__list-subtitle">Приложение</p> 
+                            </div> 
+                        </a>
+                    </li>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb"> 
+                                <picture>
+                                    <source srcset="
+                                                ./images/проект-коробки.jpg 1x,
+                                                ./images/проект-коробки-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/проект-коробки-таб.jpg    1x,
+                                                ./images/проект-коробки-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/проект-коробки-моб.jpg   1x,
+                                                ./images/проект-коробки-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/проект-коробки-моб.jpg" alt="Коробки" width="450" />
+                                </picture> 
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div> 
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Проект Boxes</h2>
+                                <p class="portfolio__list-subtitle">Приложение</p> 
+                            </div>  
+                        </a>
+                    </li>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="
+                                                ./images/вдохновению-нет-границ.jpg 1x,
+                                                ./images/вдохновению-нет-границ-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/вдохновению-нет-границ-таб.jpg    1x,
+                                                ./images/вдохновению-нет-границ-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/вдохновению-нет-границ-моб.jpg   1x,
+                                                ./images/вдохновению-нет-границ-моб-2х.jpg 2x"
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/вдохновению-нет-границ-моб.jpg" alt="Сайт" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div> 
+                        <div class="portfolio__wrap">
+                            <h2 class="portfolio__list-title " lang="en">Inspiration has no Borders</h2>
+                            <p class="portfolio__list-subtitle">Веб-сайт</p> 
+                        </div> 
+                    </a>
+                    </li>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb"> 
+                                <picture>
+                                    <source srcset="
+                                                ./images/издание.jpg 1x,
+                                                ./images/издание-2х.jpg 2x" 
+                                            media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/издание-таб.jpg    1x,
+                                                ./images/издание-таб-2х.jpg 2x" 
+                                            media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/издание-моб.jpg   1x,
+                                                ./images/издание-моб-2х.jpg 2x" 
+                                            media="(min-width: 450px)" />
+                                    <img src="./images/издание-моб.jpg" alt="Пример дизайна для журнала" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Издание Limited Edition</h2>
+                                <p class="portfolio__list-subtitle">Дизайн</p> 
+                            </div> 
+                        </a>
+                    </li>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="
+                                                ./images/проект-лаб.jpg 1x,
+                                                ./images/проект-лаб-2х.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/проект-лаб-таб.jpg    1x,
+                                                ./images/проект-лаб-таб-2х.jpg 2x" media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/проект-лаб-моб.jpg   1x,
+                                                ./images/проект-лаб-моб-2х.jpg 2x" media="(min-width: 450px)" />
+                                    <img src="./images/проект-лаб-моб.jpg" alt="Бирка с текстом" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div> 
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title ">Проект LAB</h2>
+                                <p class="portfolio__list-subtitle">Маркетинг</p>
+                            </div> 
+                        </a>
+                    </li>
+                    <li class="portfolio__item"> 
+                        <a href="" class="portfolio__link"> 
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="
+                                                ./images/растущий-бизнес.jpg 1x,
+                                                ./images/растущий-бизнес-2х.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/растущий-бизнес-таб.jpg    1x,
+                                                ./images/растущий-бизнес-таб-2х.jpg 2x" media="(min-width: 738px)" />
+                                    <source srcset="
+                                                ./images/растущий-бизнес-моб.jpg   1x,
+                                                ./images/растущий-бизнес-моб-2х.jpg 2x" media="(min-width: 450px)" />
+                                    <img src="./images/растущий-бизнес-моб.jpg" alt="Приложение для проекта" width="450" />
+                                </picture>
+                                <p class="portfolio__thumb-title">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="portfolio__wrap">
+                                <h2 class="portfolio__list-title " lang="en">Growing Business</h2>
+                                <p class="portfolio__list-subtitle">Приложение</p> 
+                            </div> 
                         </a>
                     </li>
                 </ul>
             </div>
+
+        </section>
+
+
+    </main>
     
-            <div class="subscribe">
-                <p class="subscribe__header">Подпишитесь на рассылку</p>
-                <form action="form" class="subscribe__form">
-                    <input type="mail" class="subscribe__input" placeholder="E-mail" required>
-                    <button type="submit" class="subscribe__btn">Подписаться
-                        <svg class="subscribe__icon">
-                            <use href="./images/symbol-defs.svg#telegram"></use>
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="footer__tablet-wrap">
+                <div>
+                    <a href="./index.html" lang="en" class="footer__logo logo">
+                        <span class="footer__logo-accent logo-accent">Web</span>Studio
+                    </a>
+                    <address>
+                        <ul class="footer__list list">
+                            <li>
+                                <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer"
+                                    class="footer__adress">г.
+                                    Киев, пр-т
+                                    Леси Украинки, 26
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="mailto:info@devstudio.com" class="footer__mail-link link">info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+380961111111" class="footer__phone-link">+38 096 111 11 11</a> 
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__links">
+                    <h2 class="footer__links-title">присоединяйтесь</h2>
+                    <ul class="socials list">
+                        <li class="socials__item"> 
+                            <a class="socials__link socials__link--white" href="">
+                                <svg width="20" height="20" class="socials__icon social__icon--white">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item"> 
+                            <a class="socials__link socials__link--white" href=""> 
+                                <svg width="20" height="20" class="socials__icon social__icon--white">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item"> 
+                            <a class="socials__link socials__link--white" href=""> 
+                                <svg width="20" height="20" class="socials__icon social__icon--white">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item"> 
+                            <a class="socials__link socials__link--white" href="">
+                                <svg width="20" height="20" class="socials__icon social__icon--white">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__subscription" autocomplete="off">
+                <p class="footer__subscription-title">Подпишитесь на рассылку</p>
+                <form class="footer__form">
+                    <label class="footer__form-label">
+                        <input class="footer__form-input" type="email" name="email" placeholder="E-mail" required />
+                    </label>
+                    <button class="button footer__form-button" type="submit">
+                        Подписаться
+                        <svg class="footer__form-icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
-    
             </div>
         </div>
     </footer>
     
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>

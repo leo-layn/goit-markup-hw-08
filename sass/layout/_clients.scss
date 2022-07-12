@@ -1,0 +1,68 @@
+.clients {
+    padding: 60px 0;
+    @include desktop {
+        padding: 94px 0 ;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        @include desktop {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.16;
+        }
+        text-align: center;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    &__item {
+        width: 100%;
+        flex-basis: calc((100% - 30px) / 2);
+        @include tablet {
+            flex-basis: calc((100% - 90px) / 3);
+        }
+        @include desktop {
+            flex-basis: calc((100% - 150px) / 6);
+        }
+    }
+    
+    &__link {
+        height: 92px;
+        color: var(--icons-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 210px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        @include tablet {
+            width: 226px;
+        }
+
+        @include desktop {
+            width: 170px;
+        }
+    
+        transition-property: color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    }
+    
+    &__svg {
+        fill: currentColor;
+    }
+}
